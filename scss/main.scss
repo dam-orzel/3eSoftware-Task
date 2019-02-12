@@ -1,0 +1,120 @@
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit !important;
+}
+
+@import 'colors.scss';
+
+
+.header {
+    height: 150px;
+    width: 100vw;
+    background: $white-bg;
+    &__left {
+        height: 150px;
+        .left {
+            &__icon {
+            background: $theme;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            .fa-th {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 35px;
+                color: #fff;
+            }
+        }
+        &__title {
+            text-transform: uppercase;
+            .title__content {
+                margin: 0;
+                padding: 0;
+                font-weight: 900;
+                font-size: 38px;
+                
+                p {
+                    padding: 0;
+                    margin: 0;
+                    height: 50px;
+                    margin-top: -10px;
+                }
+            }
+        }
+        }
+    }
+    &__right {
+        &__content {
+            text-transform: uppercase;
+            color: $dark-text;
+            font-size: 14px;
+            .content__actual-page {
+                color: $theme;
+            }
+        }
+    }
+}
+
+main {
+    .product {
+        &__sort {
+            .fa-sort-amount-down {
+                font-size: 24px;
+                color: $light-text;
+            }
+        }
+        &__card {
+            width: 400px;
+            height: 630px;
+            background: $light-text;
+        }
+        .card {
+            &__image {
+                &--sizer {
+                    width: 482px;
+                    height: 436px;
+                }
+            }
+            &__title {
+                text-transform: uppercase;
+            }
+            &__rate {
+                .fa-star {
+                    color: gold;
+                    font-size: 13px;
+                }
+            }
+            &__prize {
+                
+                &__amount {
+                    font-size: 28px;
+                    font-weight: bold;
+                    margin-left: 10px;
+                    &--sale {
+                        font-size: 22px;
+                        color: $dark-text;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+            &__action {
+                &__links {
+                    color: $theme;
+                    font-size: 12px;
+                }
+                &__button {
+                    .fa-shopping-cart {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

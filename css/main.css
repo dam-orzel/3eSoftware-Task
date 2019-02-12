@@ -1,0 +1,95 @@
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit !important;
+}
+
+.header {
+  height: 150px;
+  width: 100vw;
+  background: #eeeeee;
+}
+.header__left {
+  height: 150px;
+}
+.header__left .left__icon {
+  background: crimson;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.header__left .left__icon .fa-th {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  color: #fff;
+}
+.header__left .left__title {
+  text-transform: uppercase;
+}
+.header__left .left__title .title__content {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: 38px;
+}
+.header__left .left__title .title__content p {
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  margin-top: -10px;
+}
+.header__right__content {
+  text-transform: uppercase;
+  color: grey;
+  font-size: 14px;
+}
+.header__right__content .content__actual-page {
+  color: crimson;
+}
+
+main .product__sort .fa-sort-amount-down {
+  font-size: 24px;
+  color: lightgrey;
+}
+main .product__card {
+  width: 400px;
+  height: 630px;
+  background: lightgrey;
+}
+main .product .card__image--sizer {
+  width: 482px;
+  height: 436px;
+}
+main .product .card__title {
+  text-transform: uppercase;
+}
+main .product .card__rate .fa-star {
+  color: gold;
+  font-size: 13px;
+}
+main .product .card__prize__amount {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+main .product .card__prize__amount--sale {
+  font-size: 22px;
+  color: grey;
+  text-decoration: line-through;
+}
+main .product .card__action__links {
+  color: crimson;
+  font-size: 12px;
+}
+main .product .card__action__button .fa-shopping-cart {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=main.css.map */
