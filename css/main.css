@@ -91,6 +91,20 @@ a {
   color: crimson;
 }
 
+main .sidebar__button {
+  width: 40px;
+  height: 40px;
+  background: crimson;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  z-index: 9999;
+}
 main .product__sort .fa-sort-amount-down {
   font-size: 24px;
   color: lightgrey;
@@ -111,7 +125,7 @@ main .product__sort__title {
 }
 main .product__card {
   cursor: pointer;
-  width: calc(50% - 20px);
+  max-width: calc(50% - 20px);
   background: #fefefe;
   border: 1px solid lightgrey;
   margin-right: 20px;
@@ -119,6 +133,11 @@ main .product__card {
   box-sizing: border-box;
   transition: 0.1s;
   position: relative;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  main .product__card {
+    max-width: 100%;
+  }
 }
 main .product__card:hover {
   outline: 2px solid crimson;
@@ -172,6 +191,22 @@ main .product .card__action__links {
 }
 main .product .card__action__button .fa-shopping-cart {
   font-size: 14px;
+}
+main .product .show {
+  position: absolute;
+  left: 20%;
+  top: 0;
+  min-width: 80%;
+  z-index: 999;
+  background: #fff;
+  display: block;
+  padding-top: 50px;
+  transition: 1s;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  main .product-right {
+    display: none;
+  }
 }
 main .product .cart__title .icon {
   background: crimson;
