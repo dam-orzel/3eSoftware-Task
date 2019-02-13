@@ -8,10 +8,20 @@ a {
   color: inherit !important;
 }
 
+.btn {
+  padding: 5px 15px;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
 .header {
   height: 150px;
   width: 100vw;
-  background: #eeeeee;
+  background: url("../img/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  border-bottom: 1px solid lightgrey;
 }
 .header__left {
   height: 150px;
@@ -59,13 +69,33 @@ main .product__sort .fa-sort-amount-down {
   color: lightgrey;
 }
 main .product__card {
-  width: 400px;
-  height: 630px;
-  background: lightgrey;
+  width: calc(50% - 20px);
+  background: #fefefe;
+  border: 1px solid lightgrey;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: 0.1s;
+  position: relative;
 }
-main .product .card__image--sizer {
-  width: 482px;
-  height: 436px;
+main .product__card:hover {
+  outline: 2px solid crimson;
+}
+main .product .card__sale {
+  position: absolute;
+  top: -4px;
+  right: 30px;
+  background: crimson;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  color: lightgrey;
+  font-size: 14px;
+  padding: 5px;
+  font-weight: bold;
+}
+main .product .card__sale--show-off {
+  display: none;
 }
 main .product .card__title {
   text-transform: uppercase;
@@ -73,6 +103,10 @@ main .product .card__title {
 main .product .card__rate .fa-star {
   color: gold;
   font-size: 13px;
+}
+main .product .card__prize {
+  right: 0;
+  bottom: 0;
 }
 main .product .card__prize__amount {
   font-size: 28px;

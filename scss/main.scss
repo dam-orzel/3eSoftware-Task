@@ -8,13 +8,23 @@ a {
     color: inherit !important;
 }
 
+.btn {
+    padding: 5px 15px;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
 @import 'colors.scss';
 
 
 .header {
     height: 150px;
     width: 100vw;
-    background: $white-bg;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    border-bottom: 1px solid $light-text;
     &__left {
         height: 150px;
         .left {
@@ -64,6 +74,7 @@ a {
 
 main {
     .product {
+
         &__sort {
             .fa-sort-amount-down {
                 font-size: 24px;
@@ -71,15 +82,33 @@ main {
             }
         }
         &__card {
-            width: 400px;
-            height: 630px;
-            background: $light-text;
+            width: calc(50% - 20px);
+            background: #fefefe;
+            border: 1px solid $light-text;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            transition: 0.1s;
+            position: relative;
+            &:hover {
+                outline: 2px solid $theme;
+            }
         }
         .card {
-            &__image {
-                &--sizer {
-                    width: 482px;
-                    height: 436px;
+            &__sale {
+                position: absolute;
+                top: -4px;
+                right: 30px;
+                background: $theme;
+                display: inline-block;
+                width: auto;
+                text-align: center;
+                color: $light-text;
+                font-size: 14px;
+                padding: 5px;
+                font-weight: bold;
+                &--show-off {
+                    display: none;
                 }
             }
             &__title {
@@ -92,7 +121,8 @@ main {
                 }
             }
             &__prize {
-                
+                right: 0;
+                bottom: 0;
                 &__amount {
                     font-size: 28px;
                     font-weight: bold;
