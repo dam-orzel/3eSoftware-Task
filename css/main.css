@@ -13,6 +13,17 @@ a {
   border-radius: 2px;
   font-size: 14px;
 }
+@media (min-width: 0px) and (max-width: 350px) {
+  .btn {
+    padding: 3px 12px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 414px) {
+  .container {
+    padding-right: 0;
+  }
+}
 
 .header {
   height: 150px;
@@ -22,6 +33,11 @@ a {
   background-attachment: fixed;
   background-position: center;
   border-bottom: 1px solid lightgrey;
+}
+@media (min-width: 0px) and (max-width: 414px) {
+  .header {
+    padding-left: 20px;
+  }
 }
 .header__left {
   height: 150px;
@@ -49,6 +65,11 @@ a {
   font-weight: 900;
   font-size: 38px;
 }
+@media (min-width: 0px) and (max-width: 350px) {
+  .header__left .left__title .title__content {
+    font-size: 30px;
+  }
+}
 .header__left .left__title .title__content p {
   padding: 0;
   margin: 0;
@@ -60,6 +81,12 @@ a {
   color: grey;
   font-size: 14px;
 }
+@media (min-width: 0px) and (max-width: 350px) {
+  .header__right__content {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+}
 .header__right__content .content__actual-page {
   color: crimson;
 }
@@ -68,7 +95,22 @@ main .product__sort .fa-sort-amount-down {
   font-size: 24px;
   color: lightgrey;
 }
+main .product__sort__title {
+  min-width: 60px;
+}
+@media (min-width: 0px) and (max-width: 350px) {
+  main .product__sort__title {
+    min-width: 45px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 0px) and (max-width: 350px) {
+  main .product__sort .input {
+    margin: 0 5px !important;
+  }
+}
 main .product__card {
+  cursor: pointer;
   width: calc(50% - 20px);
   background: #fefefe;
   border: 1px solid lightgrey;
@@ -80,6 +122,12 @@ main .product__card {
 }
 main .product__card:hover {
   outline: 2px solid crimson;
+}
+main .product .col-12 {
+  padding: 0;
+}
+main .product .card__image {
+  width: 100%;
 }
 main .product .card__sale {
   position: absolute;
@@ -124,6 +172,125 @@ main .product .card__action__links {
 }
 main .product .card__action__button .fa-shopping-cart {
   font-size: 14px;
+}
+main .product .cart__title .icon {
+  background: crimson;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+main .product .cart__title .icon .fa-shopping-cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #fff;
+}
+main .product .cart__title .title__content {
+  margin-bottom: 0;
+}
+main .product .cart__list__item {
+  cursor: pointer;
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  position: relative;
+}
+main .product .cart__list__item:hover > .close {
+  opacity: 1;
+}
+main .product .cart__list__item .close {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  opacity: 0;
+  display: block;
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(-45deg, transparent 0%, transparent 46%, white 46%, white 56%, transparent 56%, transparent 100%), -webkit-linear-gradient(45deg, transparent 0%, transparent 46%, white 46%, white 56%, transparent 56%, transparent 100%);
+  background-color: grey;
+  transition: all 0.5s ease;
+}
+main .product .cart__list__item .item__image {
+  width: 84px;
+  height: 84px;
+}
+main .product .cart__list__item .item__content {
+  border-left: 1px solid lightgrey;
+}
+main .product .cart__list__item .item__content__info .title {
+  color: crimson;
+  font-size: 14px;
+}
+main .product .cart__list__item .item__content__info .prize {
+  color: grey;
+  font-size: 18px;
+}
+main .product .cart__list__item .item__content__rate {
+  color: gold;
+  font-size: 12px;
+}
+main .product .cart__list__subtotal {
+  font-size: 14px;
+  margin-left: -15px;
+  margin-top: 10px;
+}
+main .product .cart__list__subtotal .title {
+  color: grey;
+}
+main .product .cart__list__subtotal .prize {
+  color: crimson;
+}
+main .product .cart__list__action .btn {
+  background: crimson;
+  margin-right: 25px;
+  margin-left: -15px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+main .product .cart__list__action .btn .fas {
+  font-size: 16px;
+  margin-right: 10px;
+  transform: translateY(2px);
+}
+main .product .category__title .icon {
+  background: crimson;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+main .product .category__title .icon .fa-th {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #fff;
+}
+main .product .category__title .title__content {
+  margin-bottom: 0;
+}
+main .product .category__list .list-group {
+  border: none;
+}
+main .product .category__list .list-group-item {
+  padding-left: 0;
+  border: none;
+  border-bottom: 2px solid lightgrey;
+}
+main .product .category__list .list-group-item:last-child {
+  border-bottom: 1px solid lightgrey;
+}
+main .product .category__list .list-group-item .fas {
+  padding-left: 5px;
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */

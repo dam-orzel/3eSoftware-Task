@@ -38,13 +38,13 @@
         </div>
     </header>
     <main>
-        <div class="product mt-3">
+        <div class="product mt-5">
             <div class="container">
                 <div class="row">
-                    <div class="product-left col-sm-12 col-xl-8">
+                    <div class="product-left col-sm-12 col-md-8">
                         <div class="product__sort row">
-                            <div class="col-6 d-flex align-items-center">
-                                <span>Sort By: </span>
+                            <div class="col-xs-10 col-lg-6 d-flex align-items-center">
+                                <span class="product__sort__title">Sort By: </span>
                                 <div class="input mx-3">
                                     <div class="input-group-prepend">
                                         <button class="btn btn-outline-secondary dropdown-toggle product__sort__button"
@@ -72,9 +72,9 @@
                                 <i class="fas fa-sort-amount-down"></i>
                             </div>
                         </div>
-                        <div class="product-box mt-3">
-                            <div class="row">
-                                <div class="product__card">
+                        <div class="product-box mt-5">
+                            <div class="row container">
+                                <div class="product__card col-12 col-lg-5">
                                     <div class="card__sale">
                                         <span>On Sale!</span>
                                     </div>
@@ -111,7 +111,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product__card">
+                                <div class="product__card col-12 col-lg-5">
                                     <div class="card__sale--show-off">
                                         <span>On Sale!</span>
                                     </div>
@@ -148,7 +148,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product__card">
+                                <div class="product__card col-12 col-lg-5">
                                     <div class="card__sale--show-off">
                                         <span>On Sale!</span>
                                     </div>
@@ -185,7 +185,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product__card">
+                                <div class="product__card col-12 col-lg-5">
                                     <div class="card__sale">
                                         <span>On Sale!</span>
                                     </div>
@@ -225,7 +225,117 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-right d-none d-xl-inline col-4">asds</div>
+                    <div class="product-right d-none d-md-inline col-4">
+                        <div class="product__cart">
+                            <div class="cart__title d-flex align-items-center mb-3">
+                                <div class="icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <h2 class="title__content h5 ml-3">Your Shopping Cart</h2>
+                            </div>
+                            <div class="cart__list ml-3">
+                                <div class="row">
+                                    <div class="cart__list__item d-flex py-3 ">
+                                        <div class="close"></div>
+                                        <img src="./img/shoes.jpg" alt="" class="item__image img-fluid">
+                                        <div class="item__content ml-3 pl-3">
+                                            <div class="item__content__info d-flex flex-column">
+                                                <span class="title">Women's Shoes</span>
+                                                <span class="prize">$42.00</span>
+                                            </div>
+                                            <div class="item__content__rate">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="cart__list__item d-flex py-3">
+                                        <div class="close"></div>
+                                        <img src="./img/shoes.jpg" alt="" class="item__image img-fluid">
+                                        <div class="item__content ml-3 pl-3">
+                                            <div class="item__content__info d-flex flex-column">
+                                                <span class="title">Women's Shoes</span>
+                                                <span class="prize">$42.00</span>
+                                            </div>
+                                            <div class="item__content__rate">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="cart__list__item d-flex py-3">
+                                        <div class="close"></div>
+                                        <img src="./img/shoes.jpg" alt="" class="item__image img-fluid">
+                                        <div class="item__content ml-3 pl-3">
+                                            <div class="item__content__info d-flex flex-column">
+                                                <span class="title">Women's Shoes</span>
+                                                <span class="prize">$42.00</span>
+                                            </div>
+                                            <div class="item__content__rate">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="cart__list__subtotal">
+                                    <span class="title">Subtotal:</span>
+                                    <span class="prize">$150.00</span>
+                                </div>
+                                <div class="cart__list__action">
+                                    <button class="btn btn-danger"><i class="fas fa-shopping-cart"></i> view
+                                        cart</button>
+                                    <button class="btn btn-danger"><i class="fas fa-credit-card"></i> go to
+                                        checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__category mt-5">
+                            <div class="category__title d-flex align-items-center mb-3">
+                                <div class="icon">
+                                    <i class="fas fa-th"></i>
+                                </div>
+                                <h2 class="title__content h5 ml-3">Categories</h2>
+                            </div>
+                            <div class="category__list">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <i class="fas fa-angle-right"></i>
+                                        <span>Women's Clothes</span>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action"><i
+                                            class="fas fa-angle-right"></i>
+                                        <span>Men's Clothes</span>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action"><i
+                                            class="fas fa-angle-right"></i>
+                                        <span>Children's Clothes</span>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action"><i
+                                            class="fas fa-angle-right"></i>
+                                        <span>Women's Shoes</span>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action"><i
+                                            class="fas fa-angle-right"></i>
+                                        <span>Men's Shoes</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
